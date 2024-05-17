@@ -1,0 +1,138 @@
+<head>
+    <link rel="stylesheet" href="generel.css">
+</head>
+
+<header>
+    <div class="navbar">
+        <a href="index.astro">
+            <img src="billeder/logo" alt="Logo" class="logo">
+        </a>
+        <ul class="nav-menu">
+            <li><a href="skitser.astro">Skitser</a></li>
+            <li><a href="kunstnere.astro">Kunstnere</a></li>
+            <li><a href="events.astro">Events</a></li>
+            <li><a href="om.astro">Om os</a></li>
+
+        </ul>
+
+
+        <div class="actions">
+            <img src="billeder/likede" alt="gemte" />
+            <img src="billeder/kurv" alt="kurv">
+        </div>
+    </div>
+    <div class="burgermenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
+
+<style>
+    /* Generel styling */
+    header {
+        background-color: #f0f0f0;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        /* Juster størrelsen efter behov */
+    }
+
+    .nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        /* Centrer menupunkterne lodret */
+    }
+
+    .nav-menu li {
+        margin-right: 20px;
+    }
+
+    .actions img {
+        margin-left: 10px;
+    }
+
+    .actions {
+        display: flex;
+        /* Vis handlinger ved siden af hinanden */
+    }
+
+
+    .burgermenu {
+        display: none;
+        cursor: pointer;
+    }
+
+    /* Styling til mindre skærme */
+    @media screen and (max-width: 800px) {
+        .nav-menu {
+            display: none;
+            /* Skjul den almindelige menu på mindre skærme */
+        }
+
+        .burgermenu {
+            display: block;
+            /* Vis burgermenuen på mindre skærme */
+            cursor: pointer;
+            /* Gør musen til en pegepind, når du holder over burgermenuen */
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            /* Juster størrelsen efter behov */
+            height: 3px;
+            /* Juster størrelsen efter behov */
+            background-color: black;
+            /* Tilpas farven efter behov */
+            margin: 5px 0;
+            /* Juster afstanden mellem linjerne efter behov */
+        }
+
+        /* Styling til aktiv menu på mindre skærme */
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0;
+            padding: 20px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-menu.active li {
+            margin-bottom: 10px;
+        }
+
+        .actions img {
+            margin-left: 10px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const burgerMenu = document.querySelector('.burgermenu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        burgerMenu.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+        });
+    });
+
+
+
+</script>
