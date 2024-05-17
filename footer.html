@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="stylesheet" href="generel.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="footer_tekst">
+            <div class="footer_tekst1">
+                <p>SKITSE</p>
+                <p class="adresse">Ryesgade 5, 2200 København N</p>
+            </div>
+            <div class="footer_tekst2">
+                <p>Tlf. 81 77 50 57 - <a href="mailto:info@skitse.nu">info@skitse.nu</a></p>
+                <p>Åbningstider: Onsdag - fredag kl 12-18, Lørdag kl 11-15</p>
+            </div>
+
+        </div>
+        <div class="socialemedier">
+            <img src="billeder/insta.svg" alt="instalogo" />
+            <img src="billeder/facebook.svg" alt="facelogo" />
+
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<style>
+    p {
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .socialemedier {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .socialemedier img {
+        height: 40px;
+        width: 40px;
+    }
+
+    @media (min-width: 800px) {
+
+        .footer_tekst1,
+        .footer_tekst2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+        }
+
+        .footer_tekst {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
