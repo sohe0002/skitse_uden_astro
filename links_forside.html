@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="generel.css">
+</head>
+
+<body>
+    <div class="card">
+        <img src="img/merch.webp" alt="Billede af en merch" class="img_merch">
+        <hr>
+        <div class="link_forside">
+            <a href="skitser.astro" class="forside_link">Skitser</a>
+            <img src="img/pil.svg" alt="Pil" class="pil">
+        </div>
+        <hr>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .img_merch {
+        width: 250px;
+        height: 370px;
+        object-fit: cover;
+        padding-bottom: 20px;
+    }
+
+    .forside_link {
+        color: var(--farve2);
+        text-decoration: none;
+        font-size: 30px;
+        padding: 10px 0 10px 0;
+
+    }
+
+    .link_forside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+
+    }
+
+    .pil {
+        width: 30px;
+        object-fit: fill;
+        padding: 10px 0 10px 0;
+    }
+
+    hr {
+        width: 250px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+</style>
