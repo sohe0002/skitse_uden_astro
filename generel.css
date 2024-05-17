@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  --baggrund: #fffbf6;
+  --farve1: #293750;
+  --farve2: #667183;
+  --farve3: #6388c4;
+  --farve4: #9dc4ff;
+  --farve5: #202124;
+}
+
+body {
+  background-color: var(--baggrund);
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  color: var(--farve1);
+}
