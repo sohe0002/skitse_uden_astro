@@ -9,19 +9,23 @@
 </head>
 
 <body>
-    <img src="img/skitse.webp" alt="Billede af en skitse">
-    <h2 class="kunstner">Peter Voss-Knude</h2>
-    <div class="info">
-        <p class="størrelse">29,6 x 42 cm</p>
-        <p class="pris">2.999 DKK</p>
+    <div class="card">
+        <img src="img/skitse.webp" alt="Billede af en skitse">
+        <p class="kunstner">Peter Voss-Knude</p>
+        <div class="info">
+            <p class="størrelse">29,6 x 42 cm</p>
+            <p class="pris">2.999 DKK</p>
+        </div>
     </div>
+
 </body>
 
 </html>
 
 <style>
     img {
-        width: 25%;
+        width: 250px;
+        padding-bottom: 20px;
     }
 
     .info {
@@ -29,9 +33,28 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         max-width: 300px;
+        padding-top: 10px;
     }
 
     p {
         color: var(--farve1);
+    }
+
+    .pris {
+        color: var(--farve3);
+        font-size: 20px;
+    }
+
+    .kunstner {
+        color: var(--farve1);
+        font-size: 25px;
+    }
+
+    .størrelse {
+        color: var(--farve2);
+    }
+
+    .card {
+        padding: 10px;
     }
 </style>
