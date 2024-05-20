@@ -1,0 +1,49 @@
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <html>
+    <header>
+        <div class="navbar">
+            <a href="index.astro">
+                <img src="billeder/logo" alt="Logo" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="skitser.astro">Skitser</a></li>
+                <li><a href="kunstnere.astro">Kunstnere</a></li>
+                <li><a href="events.astro">Events</a></li>
+                <li><a href="om.astro">Om os</a></li>
+            </ul>
+            <div class="actions">
+                <img src="billeder/likede" alt="gemte" />
+                <img src="billeder/kurv" alt="kurv">
+            </div>
+            <div class="burgermenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    </html>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const burgerMenu = document.querySelector('.burgermenu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>

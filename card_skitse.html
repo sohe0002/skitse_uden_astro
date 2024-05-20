@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="generel.css">
+</head>
+
+<body>
+    <div class="card">
+        <img src="img/skitse.webp" alt="Billede af en skitse">
+        <p class="kunstner">Peter Voss-Knude</p>
+        <div class="info">
+            <p class="størrelse">29,6 x 42 cm</p>
+            <p class="pris">2.999 DKK</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    img {
+        width: 250px;
+        padding-bottom: 20px;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 300px;
+        padding-top: 10px;
+    }
+
+    p {
+        color: var(--farve1);
+    }
+
+    .pris {
+        color: var(--farve3);
+        font-size: 20px;
+    }
+
+    .kunstner {
+        color: var(--farve1);
+        font-size: 25px;
+    }
+
+    .størrelse {
+        color: var(--farve2);
+    }
+
+    .card {
+        padding: 10px;
+    }
+</style>
