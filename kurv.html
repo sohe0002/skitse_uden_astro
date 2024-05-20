@@ -1,0 +1,110 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="generel.css">
+</head>
+
+<body>
+    <div class="komponent">
+        <div class="grid_1_1">
+            <p>Kurv</p>
+            <img src="kryds.svg" alt="kryds">
+        </div>
+
+        <hr>
+
+        <div class="grid_1_1_1">
+            <div>
+                <img class="portræt" src="Rectangle 80.svg" alt="billede af portræt">
+            </div>
+            <div>
+                <h2>Peter Voss-Knude</h2>
+                <p>2.499 kr</p>
+                <div class="antal">
+                    <p>1 stk</p>
+                </div>
+            </div>
+            <div class="kryds">
+                <img src="kryds.svg" alt="kryds">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="grid_1_1">
+            <p>Total</p>
+            <p class="pris">2.499 DKK</p>
+        </div>
+
+        <div class="kurv-komponent">
+            <p> gå til kurv - komponent</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+<style>
+    .komponent {
+        width: 500px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .grid_1_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 12px;
+        padding-bottom: 20px;
+
+    }
+
+    .grid_1_1_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
+    .grid_1_1 p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .grid_1_1_1 h2 {
+        font-size: 15;
+    }
+
+    .grid_1_1_1 p {
+        font-size: 15;
+        color: #9DC4FF;
+    }
+
+    .kryds {
+        width: 20px;
+        justify-self: right;
+    }
+
+    .pris {
+        justify-self: right;
+    }
+
+    .portræt {
+        width: 100px;
+
+    }
+
+    .grid_1_1 img {
+        width: 20px;
+        justify-self: right;
+    }
+
+    .antal p {
+        color: #293750;
+    }
+
+    .kurv-komponent {
+        text-align: center;
+    }
+</style>
