@@ -8,20 +8,27 @@ header {
 }
 
 .logo {
-  width: 20px;
+  width: 40px;
 }
 
 .actions {
   display: flex;
+  gap: 10px;
+}
+
+.menu_header {
+  display: flex;
+  gap: 20px;
 }
 
 .navbar {
-  min-height: 70px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f8f8f8;
+
+  font-family: "Paytone One", sans-serif;
 }
 
 .nav-menu {
@@ -87,7 +94,7 @@ header {
     position: static;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 70px;
     font-size: 18px;
