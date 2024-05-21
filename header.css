@@ -59,18 +59,6 @@ header {
   cursor: pointer;
 }
 
-.burgermenu.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.burgermenu.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.burgermenu.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
 .bar {
   display: block;
   width: 25px;
@@ -78,6 +66,16 @@ header {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: var(--farve1);
+}
+
+.burgermenu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.burgermenu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.burgermenu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 @media (min-width: 800px) {
